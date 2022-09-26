@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Biodata Mahasiswa</title>
+    <style>
+                            .btn {
+           border: 2px solid black;
+           background-color: white;
+           color: black;
+           padding: 14px 28px;
+           font-size: 16px;
+           cursor: pointer;
+           border-radius: 20px;
+           margin-left: 10px;
+           margin-right: 10px;
+           }
+         .warning {
+           border-color: #ff9800;
+           color: orange;
+           }
+
+           .warning:hover {
+           background: #ff9800;
+           color: white;
+           }
+           .success {
+           border-color: #04AA6D;
+           color: green;
+           }
+
+           .success:hover {
+           background-color: #04AA6D;
+           color: white;
+           }
+           .danger {
+           border-color: #f44336;
+           color: red;
+           }
+
+           .danger:hover {
+           background: #f44336;
+           color: white;
+           }
+
+
+           .alert {
+padding: 20px;
+background-color: #f44336;
+color: white;
+}
+
+.closebtn {
+margin-left: 15px;
+color: white;
+font-weight: bold;
+float: right;
+font-size: 22px;
+line-height: 20px;
+cursor: pointer;
+transition: 0.3s;
+}
+
+.closebtn:hover {
+color: black;
+}
+    </style>
+</head>
+<body>
+    <h1 align="center">BIODATA MAHASISWA</h1>
+    <hr width="500">
+    <table align="center" cellpading="5" align="center" width="800">
+
+        <tr>
+            <td>Nama</td>
+            <td>: Azzahro Hidayatus Sakdiyah</td>
+        </tr>
+    
+        <tr>
+            <td>NIM</td>
+            <td>:  A11.2022.14026</td>
+            <td rowspan="5" align="center"><img src="Foto Azzah.png" width="120"></td>
+        </tr>
+        <tr>
+            <td>Dosen Wali</td>
+            <td>: Adi Prihandono M.Kom</td>
+        </tr>
+
+        <tr>
+            <td>Status</td>
+            <td>: Aktif</td>
+        </tr>
+
+        <tr>
+            <td>Alamat Semarang:</td>
+            <td>: Jl. Arjuna</td>
+        </tr>
+
+        <tr>
+            <td>Alamat asal</td>
+            <td>: Dukuh karangsari RT 01 RW 07 Karangasem Utara, Batang</td>
+        </tr>
+
+        <tr>
+            <td>No Hp</td>
+            <td>: 082138712523</td>
+        </tr>
+
+        <tr>
+            <td>E-mail</td>
+            <td>: 111202214026@mhs.dinus.ac.id</td>
+        </tr>
+
+        <tr>
+            <td>Agama</td>
+            <td>: Islam</td>
+        </tr>
+        
+    </table>
+
+    <h1 align="center">JADWAL KRS</h1>
+    <hr width="500">
+
+    <table border="1" align="center">
+        <tr style="background-color:blue;">
+            <th width="50">No</th>
+            <th width="200">Kode Mata Kuliah</th>
+            <th width="100">Kelompok</th>
+            <th width="500">Mata Kuliah</th>
+            <th width="50">SKS</th>
+            <th width="100">Status</th>
+        </tr>
+        <tr>
+            <th>1</th>
+            <th>A11.54101</th>
+            <th>A11.1402</th>
+            <th>Kalkulus 1</th>
+            <th>4</th>
+            <th>B</th>
+        </tr>
+        <tr>
+            <th>2</th>
+            <th>A11.54105</th>
+            <th>A11.1402</th>
+            <th>Dasar Pemrograman</th>
+            <th>4</th>
+            <th>B</th>
+        <tr>
+            <th>3</th>
+            <th>A11.54302</th>
+            <th>A11.1402</th>
+            <th>Matematika Diskrit</th>
+            <th>3</th>
+            <th>B</th>
+        </tr>
+        <tr>
+            <th>4</th>
+            <th>A11.54314</th>
+            <th>A11.1402</th>
+            <th>Pemrograman Berbasis Web</th>
+            <th>2</th>
+            <th>B</th>
+        </tr>
+        <tr>
+            <th>5</th>
+            <th>A11.54403</th>
+            <th>A11.1402</th>
+            <th>Organisasi dan Arsitektur Komputer</th>
+            <th>3</th>
+            <th>B</th>
+        </tr>
+        <tr>
+            <th>6</th>
+            <th>AF201704</th>
+            <th>A11.1402</th>
+            <th>Dasar Dasar Komputasi</th>
+            <th>2</th>
+            <th>B</th>
+        </tr>
+    </table>
+    <section align="center">
+        <h2>Menampilkan video di HTML5</h2>
+        <video id="myVideo" width="320" height="240" controls>
+            <source src="assets/vidio.mp4" type="video/mp4">
+          </video> <br>
+         <section style="margin-top: 20px; margin-bottom: 50px;">
+            <button onclick="durasiVid()" type="button" class="btn warning bt_durasi">Durasi Video</button>
+            <button onclick="playVid()" type="button" class="btn success bt_play"> Play Video</button>
+            <button onclick="pauseVid()" type="button" class="btn danger bt_pause"> Pause Video</button>
+         </section>
+     </section>
+
+     <script>
+        var vid = document.getElementById("myVideo");
+
+        function playVid() {
+            vid.play();
+        }
+
+        function pauseVid() {
+            vid.pause();
+        }
+
+        function durasiVid() {
+            alert(vid.duration);
+        }
+
+    </script>
+
+</body>
+</html>
